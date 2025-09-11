@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lexi - Your English Coach in WhatsApp</title>
     <style>
+        /* Accessibility helpers */
+        .visually-hidden {
+            position: absolute !important;
+            height: 1px; width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+            white-space: nowrap; /* added line */
+        }
         * {
             margin: 0;
             padding: 0;
@@ -567,33 +575,57 @@
         .whatsapp-float:hover {
             transform: scale(1.1);
         }
+        /* Skip link for keyboard users */
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .skip-link:focus {
+            left: 1rem;
+            top: 1rem;
+            width: auto;
+            height: auto;
+            padding: 0.5rem 1rem;
+            background: #000;
+            color: #fff;
+            z-index: 9999;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Header -->
     <header>
-        <nav>
-            <a href="#" class="logo">
-                <span>💬</span> Lexi
+        <nav aria-label="Primary navigation">
+            <a href="#" class="logo" aria-label="Lexi home">
+                <span role="img" aria-hidden="true">💬</span>
+                <span class="visually-hidden">Lexi</span>
             </a>
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#testimonials">Success Stories</a>
-                <a href="#" class="cta-button">
+                <a href="#" class="cta-button" aria-label="Start free trial">
                     Start Free Trial
-                    <span>→</span>
+                    <span aria-hidden="true">→</span>
                 </a>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <main id="main-content">
+    <section class="hero" role="region" aria-labelledby="hero-title">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Your English Coach, Right in WhatsApp</h1>
+                <h1 id="hero-title">Your English Coach, Right in WhatsApp</h1>
                 <p class="tagline">Practice speaking English with AI-powered voice coaching. No apps to download. Just real results.</p>
                 
                 <div class="hero-features">
@@ -624,34 +656,34 @@
                 </p>
             </div>
 
-            <div class="hero-visual">
-                <div class="phone-mockup">
-                    <div class="whatsapp-header">
-                        <span style="font-size: 1.5rem;">👤</span>
-                        <div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="phone-mockup" aria-hidden="true">
+                    <div class="whatsapp-header" aria-hidden="true">
+                        <span style="font-size: 1.5rem;" aria-hidden="true">👤</span>
+                        <div aria-hidden="true">
                             <div style="font-weight: bold;">Lexi Coach</div>
                             <div style="font-size: 0.9rem; opacity: 0.9;">Online</div>
                         </div>
                     </div>
-                    <div class="chat-area">
-                        <div class="chat-bubble">
+                    <div class="chat-area" aria-hidden="true">
+                        <div class="chat-bubble" aria-hidden="true">
                             🎯 Ready for today's challenge? Let's practice your interview skills!
                         </div>
-                        <div class="chat-bubble user">
+                        <div class="chat-bubble user" aria-hidden="true">
                             🎤 Voice message (0:45)
                         </div>
-                        <div class="chat-bubble">
+                        <div class="chat-bubble" aria-hidden="true">
                             Great job! Your pronunciation score: 8.5/10 ⭐
                             <br><br>
                             💡 Quick tip: Focus on the "th" sound in "through"
                         </div>
-                        <div class="chat-bubble">
+                        <div class="chat-bubble" aria-hidden="true">
                             🏆 You've earned the "5-Day Streak" badge!
                         </div>
                     </div>
-                    <div class="message-input-container">
-                        <input type="text" class="message-input" placeholder="Type a message">
-                        <button class="send-button">
+                    <div class="message-input-container" aria-hidden="true">
+                        <input type="text" class="message-input" placeholder="Type a message" aria-hidden="true">
+                        <button class="send-button" aria-hidden="true">
                             ➤
                         </button>
                     </div>
@@ -659,6 +691,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Features Section -->
     <section id="features" class="features-section">

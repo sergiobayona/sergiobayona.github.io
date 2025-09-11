@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — Lexi</title>
     <style>
+        .visually-hidden {
+            position: absolute !important;
+            height: 1px; width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+            white-space: nowrap;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -132,9 +139,10 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
-        <nav>
-            <a href="index.html" class="logo"><span>💬</span> Lexi</a>
+        <nav aria-label="Primary navigation">
+            <a href="index.html" class="logo" aria-label="Lexi home"><span aria-hidden="true">💬</span> <span class="visually-hidden">Lexi</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="index.html#features">Features</a>
@@ -144,8 +152,8 @@
     </header>
 
     <main>
-        <article class="container">
-            <h1>Privacy Policy for Lexi Language Learning</h1>
+        <article id="main-content" class="container" role="main" aria-labelledby="privacy-title">
+            <h1 id="privacy-title">Privacy Policy for Lexi Language Learning</h1>
             <p class="meta">Last updated: September 1, 2025</p>
 
             <p>Lexi Language Learning (“Lexi”, “we”, “our”, or “us”) provides English learning services through WhatsApp and other digital platforms. This Privacy Policy explains how we collect, use, share, and protect personal information when you interact with our Facebook page, advertisements, WhatsApp chatbot, and related services.</p>
@@ -223,7 +231,7 @@
     </main>
 
     <footer>
-        <div class="footer-links">
+        <div class="footer-links" role="contentinfo" aria-label="Footer links">
             <a href="privacy.html">Privacy Policy</a>
             <a href="index.html">Home</a>
         </div>

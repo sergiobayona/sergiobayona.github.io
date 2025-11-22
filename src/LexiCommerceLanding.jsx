@@ -127,7 +127,7 @@ const LexiCommerceLanding = () => {
           },
           {
             number: '04',
-            title: 'Conversión Completada',
+            title: 'Conversión Completa',
             description: 'Cliente satisfecho, venta realizada, todo automático'
           }
         ]

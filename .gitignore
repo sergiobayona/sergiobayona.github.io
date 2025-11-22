@@ -1,91 +1,41 @@
-<<<<<<< HEAD
-# .gitignore for a small static site (Lexi website)
-# Ignore macOS Finder files
-.DS_Store
-
-# Thumbnails, Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Node dependencies and logs
-node_modules/
-npm-debug.log*
-yarn-error.log
-pnpm-debug.log*
-
-# Build output directories
-dist/
-build/
-.out/
-
-# Common caches
-.cache/
-.parcel-cache/
-
-# Next/Vercel (if used later)
-.next/
-.vercel/
-
-# Environment files (should not be committed)
-.env
-.env.*.local
-.env.local
-
-# Python-related (in case some scripts are added)
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-venv/
-ENV/
-.venv/
-
-# Test coverage
-coverage/
-coverage-final.json
-.pytest_cache/
-
-# IDE / Editor folders
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-# Swap and temp files
-*.swp
-*.swo
-*~
-
 # Logs
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# SQLite DB files
-*.sqlite3
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+build
+.cache
+
+# Testing
+coverage
 
 # Misc
-.sass-cache/
-
-# Keep lockfiles in repo (recommended) - do NOT ignore package-lock.json / yarn.lock / pnpm-lock.yaml
-=======
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ignore files created by npm
-node_modules
-package-lock.json
-
-# Ignore the vendor file at root level and bundle for alternative installation
-/vendor/
-.bundle/
-
-# Ignore folders related to IDEs
-.vscode/
->>>>>>> 66a912b (Initial commit)
+.vercel
+.netlify

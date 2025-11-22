@@ -161,7 +161,7 @@ const LexiCommerceLanding = () => {
         company: 'Lexi Commerce',
         tagline: 'Comercio Conversacional Impulsado por IA',
         rights: 'Todos los derechos reservados.',
-        builtFor: 'Diseñado específicamente para negocios de alimentos y postres en Colombia y LATAM'
+        builtFor: 'Diseñado específicamente para negocios en Colombia y LATAM'
       }
     },
     en: {

@@ -16,7 +16,7 @@ const LexiCommerceLanding = () => {
         badge: '🚀 Impulsado por Inteligencia Artificial Generativa',
         title: 'Transforma tu WhatsApp en una',
         titleAccent: 'Máquina de Ventas 24/7',
-        subtitle: 'Automatiza ventas, soporte y pedidos en WhatsApp con agentes de IA especializados. Diseñado para negocios de alimentos y postres en Colombia y LATAM.',
+        subtitle: 'Automatiza ventas, soporte y pedidos en WhatsApp con agentes de IA especializados.',
         cta: 'Solicitar Demo Gratis',
         ctaSecondary: 'Ver Cómo Funciona',
         stats: [
@@ -161,7 +161,7 @@ const LexiCommerceLanding = () => {
         company: 'Lexi Commerce',
         tagline: 'Comercio Conversacional Impulsado por IA',
         rights: 'Todos los derechos reservados.',
-        builtFor: 'Diseñado específicamente para negocios de alimentos y postres en Colombia y LATAM'
+        builtFor: 'Diseñado específicamente para negocios en Colombia y LATAM'
       }
     },
     en: {
@@ -175,7 +175,7 @@ const LexiCommerceLanding = () => {
         badge: '🚀 Powered by Generative AI',
         title: 'Transform Your WhatsApp into a',
         titleAccent: '24/7 Sales Machine',
-        subtitle: 'Automate sales, support, and orders on WhatsApp with specialized AI agents. Built for food and dessert businesses in Colombia and LATAM.',
+        subtitle: 'Automate sales, support, and orders on WhatsApp with specialized AI agents.',
         cta: 'Request Free Demo',
         ctaSecondary: 'See How It Works',
         stats: [
@@ -320,7 +320,7 @@ const LexiCommerceLanding = () => {
         company: 'Lexi Commerce',
         tagline: 'AI-Powered Conversational Commerce',
         rights: 'All rights reserved.',
-        builtFor: 'Built specifically for food and dessert businesses in Colombia and LATAM'
+        builtFor: 'Built specifically for businesses in Colombia and LATAM'
       }
     }
   };
